@@ -228,12 +228,13 @@ submit.addEventListener(`click`, () => {
         //let ansArr = []
         MCQ.splice(MCQ[x],1)
         let MCQLeft = MCQ.length
-        // if(x != -1){
-        //     LoadingArrItemsNex()
-        // }
-        // else{
-        //   PrevItem()  
-        // }
+        if(x != 0){
+            LoadingArrItemsNex()
+        }
+        else if( x < MCQ.length){
+          PrevItem()  
+        }
+        
         
         console.log(MCQ)
        
